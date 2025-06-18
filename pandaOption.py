@@ -21,7 +21,7 @@ result['quantity'] = result['quantity'].astype(int)
 result.columns = ['Customer', 'Age', 'Item', 'Quantity']
 result.to_csv("pandaOption.csv", index=False, sep=';')
 
-print("Exported to customer_item_quantities.csv")
+print("Exported to pandaOption.csv")
 print(result)
 
 conn.close()
