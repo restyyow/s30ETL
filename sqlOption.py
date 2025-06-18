@@ -20,7 +20,7 @@ query = """
 	from orders o
 		inner join items i	
 			on o.item_id = i.item_id
-		where o.quantity is not null
+		where o.quantity > 0
 ), CTE_GroupOrders as
 (
 	select
